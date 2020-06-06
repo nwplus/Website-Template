@@ -6,9 +6,7 @@
         <Intro id="intro" :intro="intro" :volunteerOpen="volunteerFlag" :mentorOpen="mentorFlag" />
         <div id="scaledSection">
           <Events id="events" :items="events" />
-          <img src="~@/assets/branch.png" class="branch">
           <FAQ id="faq" v-if="faqFlag" :items="FAQs" />
-          <img src="~@/assets/birdAndBranch.png" class="bird-branch">
           <Sponza id="sponza" v-if="sponsorFlag" :items="sponsors" />
         </div>
       </div>

@@ -8,11 +8,6 @@
               change the norm
             </h1>
           </div>
-          <img
-            id="cmdf-logo"
-            alt="cmd-f logo"
-            src="../assets/nwlogos/cmdf.png"
-          >
           <p><strong>March 07-08, 2020</strong></p>
           <p>Vancouver’s all-female* hackathon</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0C-8InaaZoTOhlZfowGVhg9R4UwKn4Pdvcw6si2oRGff9TA/viewform" rel="noopener" target="_blank"><button class="hackerButton">Apply Now</button></a>
@@ -27,11 +22,6 @@
             type="translate"
             axis="y"
           >
-            <img
-              id="white-logo"
-              alt="cmd-f logo in white"
-              src="../assets/nwlogos/cmdf-white.svg"
-            >
             <p>Join us on International Women*'s Day at British Columbia's first and largest all-female* hackathon to explore new technologies and celebrate women* in tech.</p>
           </kinesis-element>
         </div>
@@ -55,28 +45,6 @@
             </p>
           </kinesis-element>
         </div>
-        <kinesis-element
-          :strength="backgroundParallaxStrength"
-          type="translate"
-          axis="y"
-        >
-          <img
-            id="background-graphic"
-            alt="Person cheering on mountain"
-            src="../assets/graphics/mountain-and-person.svg"
-          >
-        </kinesis-element>
-        <kinesis-element
-          :strength="foregroundParallaxStrength"
-          type="translate"
-          axis="y"
-        >
-          <img
-            id="foreground-graphic"
-            alt="A mountain and a lake"
-            src="../assets/graphics/foreground.png"
-          >
-        </kinesis-element>
       </div>
     </kinesis-container>
   </div>

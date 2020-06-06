@@ -6,11 +6,6 @@
       our events, feel free to reach out to us at
       <a class="mail-to" href="mailto:hello@nwplus.io">hello@nwplus.io</a>
     </p>
-    <div class="moon-stars">
-      <img class="moon" src="~@/assets/moon.svg" alt="">
-      <img class="stars" src="~@/assets/stars.svg" alt="">
-    </div>
-    <img id="footerBackgroundImage" src="/backgroundSvg/footer_graphic.svg">
     <div id="footer-social">
       <div id="social">
         <p>
