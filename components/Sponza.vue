@@ -66,47 +66,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap');
-@import "bulma/bulma.sass";
-$heading-font: "Caveat Brush";
-//Desktop CSS:
 
-h2 {
-  font-family: $heading-font;
-  font-size: 48px;
-  line-height: 60px;
-}
-.sponsor-title {
-  font-family: Zilla Slab;
-  font-style: normal;
-  font-size: 48px;
-  line-height: 37px;
-  font-weight: bold;
-  color: #2F4246;
-  margin-bottom: 20px;
-}
-.sponsorCategory {
-  margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.sponsorWrapper {
-  margin: 30px;
-}
-.sponza {
-  margin-top: 5%;
-  text-align: center;
-}
-//Mobile CSS:
-@include until($tablet) {
-  .sponsorCategory {
-    flex-direction: column;
-  }
-  .sponsorWrapper {
-    max-width: 300px;
-    margin: 15px;
-  }
-}
 </style>

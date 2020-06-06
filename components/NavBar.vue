@@ -151,7 +151,6 @@ a.navbar-item:focus-within {
   right: 100%;
   top: 25%;
 }
-
 .a {
   font-size: 24px;
 }
@@ -164,7 +163,6 @@ a.navbar-item:focus-within {
 .is-active .buttons .navbar-item {
   color: #fff;
 }
-
 @include until ($desktop) {
   .navbar {
     background: none;

@@ -11,7 +11,7 @@ if (!firebase.apps.length) {
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
     measurementId: 'G-CL002TYWPV',
-    appId: '1:98283589440:web:523bfe26d5bf6bc85d34a5'
+    appId: '1:5043243303:web:c5018ff33f076f14'
   }
   firebase.initializeApp(config)
 }
