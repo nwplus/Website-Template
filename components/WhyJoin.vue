@@ -45,11 +45,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import "bulma/bulma.sass";
-//Desktop CSS:
 
-//Mobile CSS:
-@include until ($desktop) {
-
-  }
 </style>
