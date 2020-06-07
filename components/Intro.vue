@@ -57,12 +57,6 @@
 <script>
 export default {
   props: {
-    isTimeout: {
-      type: Boolean,
-      default: () => {
-        return false
-      }
-    },
     volunteerOpen: {
       type: Boolean,
       default: () => false
@@ -70,6 +64,16 @@ export default {
     mentorOpen: {
       type: Boolean,
       default: () => false
+    }
+  },
+  data: function () {
+    return {
+      isTimeout: {
+        type: Boolean,
+        default: () => {
+          return false
+        }
+      }
     }
   },
   mounted: function () {

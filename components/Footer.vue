@@ -131,8 +131,10 @@ export default {
       default: 'Organized and held by nwPlus. Copyright © nwHacks 2019'
     }
   },
-  mounted() {
-    this.text = this.text.split('.')
+  data() {
+    return {
+      splitText: this.text.split('.')
+    }
   }
 }
 </script>
