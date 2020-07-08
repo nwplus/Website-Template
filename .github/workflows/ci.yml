@@ -24,3 +24,14 @@ jobs:
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+  slack:
+    name: Slack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sends Slack notification
+        uses: Ilshidur/action-slack@2.0.2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        with:
+          args: 'This message is generated from a GitHub Action!'
+
