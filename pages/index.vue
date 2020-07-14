@@ -42,25 +42,15 @@ export default {
     const Events = 'Events'
     const FAQ = 'Faq'
     // functions
-    const getSponsorImage = async (sponsor) => {
-      sponsor.imageURL = await fireDb.getImageUrl(sponsor.image)
-      if (sponsor.altImage) {
-        sponsor.altImageUrl = await fireDb.getImageUrl(sponsor.altImage)
-      }
-      return sponsor
-    }
     // data
-    const data = await fireDb.get()
-    const listOfSponsors = await fireDb.get(Sponsors)
-    const listOfEvents = await fireDb.get(Events)
-    const FaqQuestions = await fireDb.get(FAQ)
-    // Populate sponsors with their image urls
-    const populatedSponsors = (
-      await Promise.all(listOfSponsors.map(sponsor => getSponsorImage(sponsor)))
-    ).filter(sponsor => sponsor.imageURL !== '')
+    const data = await fireDb.getWebsiteData()
+    const listOfSponsors = await fireDb.getCollection(Sponsors)
+    const listOfEvents = await fireDb.getCollection(Events)
+    const FaqQuestions = await fireDb.getCollection(FAQ)
+
     return {
       info: data.WelcomeText,
-      sponsors: populatedSponsors,
+      sponsors: listOfSponsors,
       outro: data.OutroText,
       footer: data.FooterText,
       events: listOfEvents,
